@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "863606149324",
+    "firebase_url": "https://project-akhir-kontrolrelay-default-rtdb.firebaseio.com",
+    "project_id": "project-akhir-kontrolrelay",
+    "storage_bucket": "project-akhir-kontrolrelay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863606149324:android:b8c07beac312db52ba3269",
+        "android_client_info": {
+          "package_name": "com.example.projectakhir_kontrolrelay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863606149324-lcsvkuibshct29fjufj2j0jbv33prmu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA50uv_5fY5KUnQGu6-JNeUJvOcrLv_bIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863606149324-lcsvkuibshct29fjufj2j0jbv33prmu6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

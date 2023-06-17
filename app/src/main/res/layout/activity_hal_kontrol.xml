@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#4CB5F5"
+    tools:context=".halKontrol">
+  
+  <RelativeLayout
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:background="#375E97">
+  <TextView
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:textSize="40dp"
+      android:textColor="#ffffff"
+      android:text="PANEL KONTROL"/>
+  </RelativeLayout>
+  
+  <RelativeLayout
+      android:id="@+id/lampu1"
+      android:layout_below="@id/header"
+      android:layout_marginTop="30dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:background="#375E97">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/lampu2"/>
+      <Button
+          android:id="@+id/on1"
+          android:layout_marginLeft="12dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ON"
+          android:textColor="#FFFFFF"
+          android:backgroundTint="#42F54B"
+          android:textSize="15dp" />
+      <Button
+          android:id="@+id/off1"
+          android:layout_marginLeft="12dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="OFF"
+          android:textColor="#FFFFFF"
+          android:backgroundTint="#F54242"
+          android:textSize="15dp" />
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/lampu2"
+      android:layout_below="@id/lampu1"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:background="#375E97">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/lampu2"/>
+      <Button
+          android:id="@+id/on2"
+          android:layout_marginLeft="12dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ON"
+          android:textColor="#FFFFFF"
+          android:backgroundTint="#42F54B"
+          android:textSize="15dp" />
+      <Button
+          android:id="@+id/off2"
+          android:layout_marginLeft="12dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="OFF"
+          android:textColor="#FFFFFF"
+          android:backgroundTint="#F54242"
+          android:textSize="15dp" />
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/lampu3"
+      android:layout_below="@id/lampu2"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:background="#375E97">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/lampu2"/>
+      <Button
+          android:id="@+id/on3"
+          android:layout_marginLeft="12dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ON"
+          android:textColor="#FFFFFF"
+          android:backgroundTint="#42F54B"
+          android:textSize="15dp" />
+      <Button
+          android:id="@+id/off3"
+          android:layout_marginLeft="12dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="OFF"
+          android:textColor="#FFFFFF"
+          android:backgroundTint="#F54242"
+          android:textSize="15dp" />
+    </LinearLayout>
+
+  </RelativeLayout>
+
+</RelativeLayout>
