@@ -12,44 +12,29 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button tombolLogin;
-    EditText idBar;
-    EditText pwBar;
-
+    Button btnMasuk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        idBar = (EditText) findViewById(R.id.idBar);
-        pwBar = (EditText) findViewById(R.id.pwBar);
-
-        tombolLogin = (Button) findViewById(R.id.tombolLogin);
-        tombolLogin.setOnClickListener(new View.OnClickListener() {
+        btnMasuk = (Button) findViewById(R.id.btnMasuk);
+        btnMasuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                klikMasuk();
+                MasukLoginOnClick();
             }
         });
     }
-    public void klikMasuk() {
-        String user , pw ;
-        user = idBar.getText().toString();
-        pw = pwBar.getText().toString();
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Toast.makeText(this.getBaseContext(), "Terimakasih",
+                Toast.LENGTH_LONG).show();
+    }
+    public void MasukLoginOnClick() {
+        Intent nextpage = new Intent(this, LoginActivity.class);
+        startActivity(nextpage);
 
-        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-
-        String newuser= "admin";
-        String newpass0= "admin";
-
-        if (user.equals(newuser) && pw.equals(newpass0)){
-
-            Intent halamanKontrol=new Intent(this, halKontrol.class);
-            startActivity(halamanKontrol);
-            Toast.makeText(this.getBaseContext(), "Berhasil masuk",Toast.LENGTH_LONG).show();
-        }
-        else{
-            Toast.makeText(this.getBaseContext(), "Maaf, User atau Password yang kamu masukan salah.",Toast.LENGTH_LONG).show();
-        }
     }
 }
